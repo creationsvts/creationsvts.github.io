@@ -1,0 +1,67 @@
+@import "../resources-sass/normalize";
+:root{
+    --color-primary:#419F00;
+    --color-secondary:#4EA93B;
+    --color-paragraph:#2B2C34;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+header{
+    background:var(--color-secondary);
+    padding:1rem 0 2rem 0 ;
+    border-radius:0 0 0 6.25rem;
+    .image__logo{
+        width: 180px;
+    }
+    .logo__box{
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        align-items: center;
+    }
+    .design-3d{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title__logo{
+        color:white;
+        font-weight: 700;
+        font-size:2.1875rem;
+        text-align: center;
+    }
+    nav{
+        display:flex;
+        flex-direction:column;
+        align-items: flex-end;
+        padding:0 1rem 1rem 0 ;
+        .fa-bars,.fa-times{
+            color:white;
+            font-size:2rem;
+            z-index:999;
+            cursor:pointer;
+        }
+        .menu{
+            background:rgba(0, 0, 0,.69);
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:0;
+            padding:0;
+            display:none;
+            .menu__item{
+                padding:2rem  0 0 1rem ;
+                font-size:20px;
+            }
+            .menu__link{
+                color:white;
+                text-decoration:none;
+                font-weight: 500;
+            }
+        }
+    }
+}
