@@ -450,3 +450,45 @@ header nav .menu .menu__link {
 .eco-bottle .eco-bottle__image {
   width: 100%;
 }
+
+.caracteristicas {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+.caracteristicas .caratersiticas__title {
+  font-size: 22px;
+  text-align: center;
+  color: var(--color-paragraph);
+  margin: 0;
+  padding: 1rem 0;
+}
+.caracteristicas article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.caracteristicas article .caracteristica__icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+}
+.caracteristicas article .caracteristica__text {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-paragraph);
+  text-align: center;
+}
