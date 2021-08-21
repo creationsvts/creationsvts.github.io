@@ -431,3 +431,22 @@ header nav .menu .menu__link {
   text-decoration: none;
   font-weight: 500;
 }
+
+.eco-bottle {
+  padding: 1rem 0 0 0;
+}
+.eco-bottle .eco-bottle__description__box {
+  padding: 1rem 0 1rem 1rem;
+  background: var(--color-primary);
+}
+.eco-bottle .eco-bottle__description__box .eco-bottle__description {
+  color: white;
+  margin: 0;
+  line-height: 26px;
+}
+.eco-bottle .eco-bottle__description__box .eco-bottle__title {
+  color: white;
+}
+.eco-bottle .eco-bottle__image {
+  width: 100%;
+}

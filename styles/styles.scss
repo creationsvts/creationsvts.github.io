@@ -65,3 +65,21 @@ header{
         }
     }
 }
+.eco-bottle{
+    padding:1rem 0 0 0;
+    .eco-bottle__description__box{
+        padding:1rem 0 1rem 1rem ;
+        background:var(--color-primary);
+        .eco-bottle__description{
+            color:white;
+            margin:0;
+            line-height: 26px;
+        }
+        .eco-bottle__title{
+            color:white;
+        }
+    }
+    .eco-bottle__image{
+        width: 100%;
+    }
+}
