@@ -5,7 +5,7 @@ const Header =()=>{
     const $logo = document.createElement('section')
     const $3DBottle = document.createElement('section')
     const $menuIcon = document.createElement('i')
-    $menuIcon.classList.add('fas','fa-bars')
+    $menuIcon.classList.add('fas','fa-bars','menu-icon')
     const $items = [
         'Inicio',
         'Creacion',
@@ -14,6 +14,9 @@ const Header =()=>{
     ]
     const $ul = document.createElement('ul')
     $ul.classList.add('menu')
+    const $close = document.createElement('i')
+    $close.classList.add('fas','fa-times')
+    $ul.appendChild($close)
     $items.forEach(el =>{
         let $li = document.createElement('li')
         let $a = document.createElement('a')
