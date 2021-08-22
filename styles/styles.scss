@@ -133,3 +133,23 @@ header{
         width: 100%;
     }
 }
+.producto{
+    .producto__title{
+        text-align:center ;
+        font-size:2rem;
+        font-weight: 700;
+        color:var(--color-paragraph);
+    }
+    article{
+        padding:0 0 0 1rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        display:grid;
+        grid-gap:1rem;
+        grid-template-columns: repeat(2,1fr);
+        .bottle__image{
+            width: 100px;
+        }
+    }
+}

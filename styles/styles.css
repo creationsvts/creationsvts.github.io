@@ -523,3 +523,30 @@ header nav .menu .menu__link {
 .produccion .produccion__image {
   width: 100%;
 }
+
+.producto .producto__title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-paragraph);
+}
+.producto article {
+  padding: 0 0 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: 1fr 1rem 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+.producto article .bottle__image {
+  width: 100px;
+}
