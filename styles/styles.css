@@ -431,6 +431,14 @@ header nav .menu .menu__link {
   text-decoration: none;
   font-weight: 500;
 }
+header nav .fa-times {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+header nav .active {
+  display: block;
+}
 
 .eco-bottle {
   padding: 1rem 1rem 0 1rem;

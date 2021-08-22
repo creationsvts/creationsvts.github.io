@@ -63,6 +63,14 @@ header{
                 font-weight: 500;
             }
         }
+        .fa-times{
+            position: absolute;
+            top:1rem;
+            right:1rem;
+        }
+        .active{
+            display: block;
+        }
     }
 }
 .eco-bottle{
