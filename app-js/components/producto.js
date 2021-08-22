@@ -1,5 +1,6 @@
 const Producto = () =>{
     const $producto = document.createElement('section')
+    $producto.id = 'producto'
     const Dir = 'resources'
     const $titleProducto = document.createElement('p')
     const $imagesBox =document.createElement('article')

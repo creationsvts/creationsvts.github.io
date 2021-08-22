@@ -1,6 +1,7 @@
 const Caracteristicas =()=>{
     const $Fragment = document.createDocumentFragment()
     const $caracteristicas = document.createElement('section')
+    $caracteristicas.id = 'caracteristicas'
     const $title = document.createElement('h3')
     $caracteristicas.classList.add('caracteristicas')
     const caracteristicasList = [
