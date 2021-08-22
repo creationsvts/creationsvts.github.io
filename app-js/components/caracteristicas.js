@@ -11,14 +11,14 @@ const Caracteristicas =()=>{
         },
         {
             icon:`fa-bong`,
-            text:'Resistencia termina y quimica'
+            text:'Resistencia Térmica y Química'
         },
         {
             icon:`fa-recycle`,
             text:'100% Biodegradables'
         }        
     ]
-    $title.textContent = 'Caracteristicas de PBS'
+    $title.textContent = 'Características de PBS'
     $title.classList.add('caratersiticas__title')
     $caracteristicas.appendChild($title)
     caracteristicasList.forEach(el => {

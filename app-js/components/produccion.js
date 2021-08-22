@@ -4,7 +4,7 @@ const Produccion =()=>{
     $produccion.classList.add('produccion')
     const $Fragment = document.createDocumentFragment()
     $produccion.innerHTML = `
-        <p class="produccion__title">Produccion de Eco Bottle</p>
+        <p class="produccion__title">Producción de Eco Bottle</p>
         <img src="resources/image-two.png" alt="https://biopolymers.nurel.com/sites/nurelbiopolymers.com/files/injection_blow_moulding_process.png" class="produccion__image">
         <p class="produccion__description">
             El moldeo por inyección-soplado consiste 

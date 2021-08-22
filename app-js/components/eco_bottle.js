@@ -13,9 +13,9 @@ const EcoBottle = ()=>{
     <h1 class="eco-bottle__title">Eco Bottle</h1>
     <p class="eco-bottle__description">
         Son botellas 100% biodegradables
-        gracias el polimero Succinato de polibutileno(PBS)
-        un material muy prometedor para la produccion 
-        y comercializacion de productos compostables.
+        gracias a el polimero Succinato de polibutileno(PBS)
+        un material muy prometedor para la producción 
+        y comercialización de productos compostables.
     </p>
     `
     $ecoBottle.appendChild($ecoBottleDescription)

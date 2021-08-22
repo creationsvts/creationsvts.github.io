@@ -7,10 +7,10 @@ const Header =()=>{
     const $menuIcon = document.createElement('i')
     $menuIcon.classList.add('fas','fa-bars','menu-icon')
     const $items = [
-        'Inicio',
-        'Creacion',
-        'Caracteristicas',
-        'Producto'
+        {link:'inicio',text:'Inicio'},
+        {link:'Creacion',text:'Creación'},
+        {link:'Caracteristicas',text:'Características'},
+        {link:'Producto',text:'Características'},
     ]
     const $ul = document.createElement('ul')
     $ul.classList.add('menu')
@@ -20,10 +20,10 @@ const Header =()=>{
     $items.forEach(el =>{
         let $li = document.createElement('li')
         let $a = document.createElement('a')
-        $a.href =`#${el.toLocaleLowerCase()}`
+        $a.href =`#${el.link.toLocaleLowerCase()}`
         $li.classList.add('menu__item')
         $a.classList.add('menu__link')
-        $a.textContent = el
+        $a.textContent = el.text
         $li.appendChild($a)
         $ul.appendChild($li)
     })
