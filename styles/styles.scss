@@ -204,6 +204,7 @@ footer{
     color:white;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding:1rem;
     .modal__form{
         border:2px solid white ;
@@ -211,6 +212,7 @@ footer{
         font-size:20px;
         line-height: 30px;
         text-align:center;
+        padding:0 1rem;
     }
     .modal__btn{
         width: 80px;
