@@ -4,6 +4,7 @@ import Caracteristicas from "./components/caracteristicas.js"
 import Produccion from "./components/produccion.js"
 import Producto from "./components/producto.js"
 import Footer from "./components/footer.js";
+import WindowMolueForm from "./components/modales.js"
 const $root = document.getElementById('root')
 document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Header())
@@ -20,5 +21,11 @@ document.addEventListener('click',(e)=>{
     }else if(e.target.matches('.fa-times')){
         document.querySelector('.menu').classList.remove('active')
         document.querySelector('.menu-icon').style.display='block'
+    }
+})
+document.addEventListener('submit',(e)=>{
+    if(e.target.matches('form')){
+        e.preventDefault()
+        $root.appendChild(WindowMolueForm())
     }
 })
