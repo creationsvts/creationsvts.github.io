@@ -667,3 +667,172 @@ footer form button {
     grid-column: 2/3;
   }
 }
+@media screen and (min-width: 1000px) {
+  header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 400px;
+    grid-template-columns: 1fr 400px;
+    position: relative;
+    padding: 1rem 1rem 0 1rem;
+  }
+  header nav {
+    background: transparent;
+    padding: 0;
+    position: absolute;
+    top: 1rem;
+    left: 25%;
+  }
+  header nav .menu-icon {
+    display: none;
+  }
+  header nav .menu {
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  header nav .menu .fa-times {
+    display: none;
+  }
+  header nav .menu .menu__item {
+    padding: 0 1rem;
+  }
+  header .logo__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1fr;
+    grid-template-columns: 200px 1fr;
+  }
+  header .logo__box .title__loo {
+    font-size: 45px;
+    padding: 0;
+  }
+  header .design-3d {
+    width: 400px;
+    height: 300px;
+  }
+  header .design-3d iframe {
+    height: 300px;
+    border-radius: 0 0 0 0;
+  }
+
+  .eco-bottle {
+    -ms-grid-columns: 250px 0 1fr;
+    grid-template-columns: 250px 1fr;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .eco-bottle .eco-bottle__description__box {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .eco-bottle .eco-bottle__description__box .eco-bottle__title {
+    font-size: 50px;
+    padding: 0 0 0 0;
+  }
+  .eco-bottle .eco-bottle__description__box .eco-bottle__description {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .eco-bottle .eco-bottle__image {
+    height: 400px;
+    width: 250px;
+  }
+
+  .caracteristicas {
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .caracteristicas .caratersiticas__title {
+    font-size: 3rem;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+  }
+  .caracteristicas article .caracteristica__icon {
+    font-size: 5rem;
+  }
+  .caracteristicas article .caracteristica__text {
+    font-size: 25px;
+  }
+  .caracteristicas article:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+
+  .produccion .produccion__image {
+    width: 400px;
+  }
+  .produccion .produccion__title {
+    font-size: 3rem;
+  }
+  .produccion .produccion__description {
+    font-size: 18px;
+    padding: 0 1rem;
+  }
+
+  .producto .producto__title {
+    font-size: 3rem;
+  }
+  .producto article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1rem 200px 1rem 200px;
+    grid-template-columns: repeat(3, 200px);
+  }
+  .producto article .bottle__image {
+    width: 150px;
+  }
+
+  footer form {
+    padding: 0 3rem 1rem 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  footer form input:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+  }
+  footer form input:nth-child(2) {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-column: 5/9;
+  }
+  footer form input:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 8;
+    grid-column: 1/9;
+  }
+  footer form input::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+  footer form input::-moz-placeholder {
+    font-size: 20px;
+  }
+  footer form input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+  footer form input::-ms-input-placeholder {
+    font-size: 20px;
+  }
+  footer form input::placeholder {
+    font-size: 20px;
+  }
+  footer form button {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 2;
+    grid-column: 4/6;
+    height: 50px;
+    font-size: 20px;
+  }
+}
