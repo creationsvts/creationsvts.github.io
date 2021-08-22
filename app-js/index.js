@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Produccion())
     $root.appendChild(Producto())
     $root.appendChild(Footer())
+    $root.appendChild(WindowMolueForm())
 })
 document.addEventListener('click',(e)=>{
     if(e.target.matches('.menu-icon')){
@@ -22,10 +23,13 @@ document.addEventListener('click',(e)=>{
         document.querySelector('.menu').classList.remove('active')
         document.querySelector('.menu-icon').style.display='block'
     }
+    if(e.target.matches('.modal__btn')){
+        document.querySelector('.modal__form__box').style.display = 'none'
+    }
 })
 document.addEventListener('submit',(e)=>{
     if(e.target.matches('form')){
         e.preventDefault()
-        $root.appendChild(WindowMolueForm())
+        document.querySelector('.modal__form__box').style.display = 'flex'
     }
 })
