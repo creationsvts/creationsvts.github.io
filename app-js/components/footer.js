@@ -1,0 +1,1 @@
+const Footer =()=>{ console.log('hello word')}
