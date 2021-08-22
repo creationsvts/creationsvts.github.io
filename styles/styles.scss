@@ -193,3 +193,45 @@ footer{
         }
     }
 }
+@media  screen and (min-width:500px) {
+    .producto{
+        padding:0 0 2rem 0;
+        article{
+            grid-template-columns: repeat(3,1fr);
+            padding:0 0 0 30px;
+        }
+    }
+    .caracteristicas{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        .caratersiticas__title{
+            grid-column:1/3;
+            text-align:center ;
+            font-size:2rem;
+        }
+        article:nth-child(4){
+            grid-column: 1/3;
+        }
+    }
+    .produccion{
+        .produccion__title{
+            font-size:2rem;
+        }
+    }
+    .eco-bottle{
+        display:flex;
+        align-items: center;
+        display:grid;
+        grid-template-columns:200px 1fr ;
+        grid-gap:0;
+        .eco-bottle__image{
+            width: 200px;
+            grid-column:1/2;
+            grid-row:1/2;
+            height: 100%;
+        }
+        .eco-bottle__description__box{
+            grid-column:2/3;
+        }
+    }
+}
