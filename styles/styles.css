@@ -550,3 +550,49 @@ header nav .menu .menu__link {
 .producto article .bottle__image {
   width: 100px;
 }
+
+footer form {
+  background: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10px 10px 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+}
+footer form input {
+  border: 2px solid white;
+  height: 40px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  padding-left: 1rem;
+  outline: none;
+}
+footer form input::-webkit-input-placeholder {
+  color: white;
+}
+footer form input::-moz-placeholder {
+  color: white;
+}
+footer form input:-ms-input-placeholder {
+  color: white;
+}
+footer form input::-ms-input-placeholder {
+  color: white;
+}
+footer form input::placeholder {
+  color: white;
+}
+footer form input:nth-child(3) {
+  height: 150px;
+}
+footer form button {
+  border: 2px solid white;
+  height: 30px;
+  background: transparent;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
