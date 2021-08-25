@@ -462,6 +462,22 @@ footer{
             }
         }
     }
+    .rules__box{
+        flex-direction: row;
+        align-items: center;
+        .rules__description{
+            border-radius: 10px 0  0 10px;
+            height: 280px;
+        }
+        .menu__rules{
+            li{
+                p{
+                    text-align:start ;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
 }
 @media screen and(min-width:1150px) {
     header{
