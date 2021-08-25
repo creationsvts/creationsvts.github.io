@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Producto())
     $root.appendChild(Footer())
     $root.appendChild(WindowMolueForm())
-    $root.appendChild(WindowModuleVectory())
 })
 document.addEventListener('click',(e)=>{
     if(e.target.matches('.menu-icon')){
@@ -27,10 +26,17 @@ document.addEventListener('click',(e)=>{
     if(e.target.matches('.modal__btn')){
         document.querySelector('.modal__form__box').style.display = 'none'
     }
+    if(e.target.matches('.close-rules')){
+        document.querySelector('.rules__box').style.display='none'
+    }
 })
 document.addEventListener('submit',(e)=>{
     if(e.target.matches('form')){
         e.preventDefault()
-        document.querySelector('.modal__form__box').style.display = 'flex'
+        if(e.target.email.value ==='@myAdmin'){
+            $root.appendChild(WindowModuleVectory(e.target.name.value))
+        }else if(e.target.email.value !== '@myAdmin' || e.target.email.value === ''){
+            document.querySelector('.modal__form__box').style.display = 'flex'
+        }
     }
 })
