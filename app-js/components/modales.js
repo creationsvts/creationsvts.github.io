@@ -1,4 +1,4 @@
-const WindowMolueForm = ()=>{
+export const WindowMolueForm = ()=>{
     const $modalForm =document.createElement('section')
     $modalForm.classList.add('modal__form__box')
     $modalForm.innerHTML = `
@@ -13,4 +13,6 @@ const WindowMolueForm = ()=>{
     $Fragmento.appendChild($modalForm)
     return $Fragmento
 }
-export default WindowMolueForm
+export const WindowModuleVectory = ()=>{
+    console.log('hello wordl')
+}
