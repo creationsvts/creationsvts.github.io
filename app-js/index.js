@@ -4,7 +4,7 @@ import Caracteristicas from "./components/caracteristicas.js"
 import Produccion from "./components/produccion.js"
 import Producto from "./components/producto.js"
 import Footer from "./components/footer.js";
-import WindowMolueForm from "./components/modales.js"
+import {WindowMolueForm,WindowModuleVectory} from "./components/modales.js"
 const $root = document.getElementById('root')
 document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Header())
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Producto())
     $root.appendChild(Footer())
     $root.appendChild(WindowMolueForm())
+    $root.appendChild(WindowModuleVectory())
 })
 document.addEventListener('click',(e)=>{
     if(e.target.matches('.menu-icon')){
