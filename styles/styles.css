@@ -1146,6 +1146,10 @@ footer form button {
   .docs .doc .docs-icon {
     font-size: 4rem;
   }
+
+  .video__box .video {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 1150px) {
   header .logo__box {

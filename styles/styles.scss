@@ -607,6 +607,11 @@ footer{
             }
         }
     }
+    .video__box{
+        .video{
+            width: 80%;
+        }
+    }
 }
 @media screen and(min-width:1150px) {
     header{
