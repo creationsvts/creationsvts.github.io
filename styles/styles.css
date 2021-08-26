@@ -1113,6 +1113,10 @@ footer form button {
     top: auto;
     bottom: auto;
   }
+
+  .docs .doc .docs-icon {
+    font-size: 4rem;
+  }
 }
 @media screen and (min-width: 1150px) {
   header .logo__box {
