@@ -5,6 +5,7 @@ import Produccion from "./components/produccion.js"
 import Producto from "./components/producto.js"
 import Footer from "./components/footer.js";
 import {WindowMolueForm,WindowModuleVectory} from "./components/modales.js"
+import Docs from "./components/docs.js"
 const $root = document.getElementById('root')
 document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Header())
@@ -38,5 +39,10 @@ document.addEventListener('submit',(e)=>{
         }else if(e.target.email.value !== '@myAdmin' || e.target.email.value === ''){
             document.querySelector('.modal__form__box').style.display = 'flex'
         }
+    }
+})
+window.addEventListener('hashchange',(e)=>{
+    if(location.hash === '#documentacion'){
+        $root.innerHTML=Docs()
     }
 })
