@@ -10,7 +10,6 @@ const Header =()=>{
         {link:'inicio',text:'Inicio'},
         {link:'documentacion',text:'Docs'},
         {link:'video',text:'Video'},
-        {link:'Producto',text:'Características'},
     ]
     const $ul = document.createElement('ul')
     $ul.classList.add('menu')
