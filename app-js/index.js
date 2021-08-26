@@ -6,6 +6,7 @@ import Producto from "./components/producto.js"
 import Footer from "./components/footer.js";
 import {WindowMolueForm,WindowModuleVectory} from "./components/modales.js"
 import Docs from "./components/docs.js"
+import Video from "./components/video.js"
 const $root = document.getElementById('root')
 document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Header())
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded',(e)=>{
     $root.appendChild(Producto())
     $root.appendChild(Footer())
     $root.appendChild(WindowMolueForm())
+    $root.appendChild(Video())
 })
 document.addEventListener('click',(e)=>{
     if(e.target.matches('.menu-icon')){
@@ -30,6 +32,9 @@ document.addEventListener('click',(e)=>{
     if(e.target.matches('.close-rules')){
         document.querySelector('.rules__box').style.display='none'
     }
+    if(e.target.matches('.close-video')){
+        document.querySelector('.video__box').style.display='none'
+    }
 })
 document.addEventListener('submit',(e)=>{
     if(e.target.matches('form')){
@@ -44,5 +49,8 @@ document.addEventListener('submit',(e)=>{
 window.addEventListener('hashchange',(e)=>{
     if(location.hash === '#documentacion'){
         $root.innerHTML=Docs()
+    }
+    if(location.hash === '#video'){
+        document.querySelector('.video__box').style.display='flex'
     }
 })
