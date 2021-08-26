@@ -56,6 +56,6 @@ window.addEventListener('hashchange',(e)=>{
         document.querySelector('.video__box').style.display='flex'
     }
     if(location.hash === '#inicio'){
-        location.href =  'http://localhost:8848'
+        location.href =  'https://creationsvts.github.io/'
     }
 })
