@@ -34,6 +34,7 @@ document.addEventListener('click',(e)=>{
     }
     if(e.target.matches('.close-video')){
         document.querySelector('.video__box').style.display='none'
+        location.hash = ''
     }
 })
 document.addEventListener('submit',(e)=>{
@@ -52,5 +53,8 @@ window.addEventListener('hashchange',(e)=>{
     }
     if(location.hash === '#video'){
         document.querySelector('.video__box').style.display='flex'
+    }
+    if(location.hash === '#inicio'){
+        location.href =  'http://localhost:8848'
     }
 })
