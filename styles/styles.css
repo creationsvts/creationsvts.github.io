@@ -875,6 +875,27 @@ footer form button {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
+
+  .header-other {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-other nav {
+    padding: 0;
+  }
+  .header-other nav .menu__other {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-other nav .menu__other .menu__item__other {
+    padding: 0 10px;
+  }
 }
 @media screen and (min-width: 1000px) {
   header {
