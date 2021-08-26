@@ -1083,6 +1083,36 @@ footer form button {
     text-align: start;
     padding: 0 1rem;
   }
+
+  .header-other {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1rem 2rem;
+  }
+  .header-other .header-other__logo .header-other__logo__image {
+    width: 70px;
+  }
+  .header-other .header-other__logo .header-other__logo__title {
+    padding: 0 0 0 1rem;
+    font-size: 2rem;
+  }
+  .header-other nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+  }
 }
 @media screen and (min-width: 1150px) {
   header .logo__box {

@@ -555,6 +555,29 @@ footer{
             }
         }
     }
+    .header-other{
+        justify-content: space-between;
+        align-items:center;
+        padding:1rem 2rem;
+        .header-other__logo{
+            .header-other__logo__image{
+                width: 70px;
+            }
+            .header-other__logo__title{
+                padding: 0 0 0 1rem;
+                font-size:2rem;
+            }
+        }
+        nav{
+            display:flex;
+            align-items: center;
+            position:relative;
+            left:auto;
+            right: auto;
+            top:auto;
+            bottom:auto;
+        }
+    }
 }
 @media screen and(min-width:1150px) {
     header{
