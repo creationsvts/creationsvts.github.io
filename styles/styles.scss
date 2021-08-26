@@ -285,6 +285,70 @@ footer{
         }
     }
 }
+.header-other{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    padding:0;
+    nav{ 
+        display:block;
+        .menu__other{
+            list-style:none;
+            padding:0;
+            margin:0;
+            li{
+                padding:1rem 0;
+                text-align:center ;
+            }
+            a{
+                text-decoration:none;
+                color:white;
+                font-size:20px;
+                padding:0;
+            }
+        }
+    }
+    .header-other__logo{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        padding:0 1rem;
+        .header-other__logo__image{
+            width: 40px;
+        }
+        .header-other__logo__title{
+            color:white;
+        }
+    }
+}
+.docs{
+    height: 60vh;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction:column;
+    .doc{
+        padding:1rem 0;
+        display:flex;
+        justify-content:center ;
+        align-items: center;
+        .docs-icon{
+            font-size:3rem;
+            color:var(--color-paragraph);
+        }
+        .docs__description{
+            padding:0 1rem;
+        }
+        .docs__dowload{
+            text-decoration:none;
+            background:var(--color-primary);
+            color:white;
+            padding:1rem;
+            font-size:16px;
+            border-radius:10px;
+        }
+    }
+}
 @media  screen and (min-width:500px) {
     .producto{
         padding:0 0 2rem 0;
