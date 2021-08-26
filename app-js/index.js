@@ -22,7 +22,7 @@ document.addEventListener('click',(e)=>{
     if(e.target.matches('.menu-icon')){
         document.querySelector('.menu').classList.add('active')
         document.querySelector('.menu-icon').style.display='none'
-    }else if(e.target.matches('.fa-times')){
+    }else if(e.target.matches('.close-menu-first')){
         document.querySelector('.menu').classList.remove('active')
         document.querySelector('.menu-icon').style.display='block'
     }
@@ -50,6 +50,7 @@ document.addEventListener('submit',(e)=>{
 window.addEventListener('hashchange',(e)=>{
     if(location.hash === '#documentacion'){
         $root.innerHTML=Docs()
+        $root.appendChild(Video())
     }
     if(location.hash === '#video'){
         document.querySelector('.video__box').style.display='flex'
