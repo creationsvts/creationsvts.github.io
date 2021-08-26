@@ -8,8 +8,8 @@ const Header =()=>{
     $menuIcon.classList.add('fas','fa-bars','menu-icon')
     const $items = [
         {link:'inicio',text:'Inicio'},
-        {link:'Creacion',text:'Creación'},
-        {link:'Caracteristicas',text:'Características'},
+        {link:'documentacion',text:'Docs'},
+        {link:'video',text:'Video'},
         {link:'Producto',text:'Características'},
     ]
     const $ul = document.createElement('ul')
