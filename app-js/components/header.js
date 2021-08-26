@@ -15,7 +15,7 @@ const Header =()=>{
     const $ul = document.createElement('ul')
     $ul.classList.add('menu')
     const $close = document.createElement('i')
-    $close.classList.add('fas','fa-times')
+    $close.classList.add('fas','fa-times','close-menu-first')
     $ul.appendChild($close)
     $items.forEach(el =>{
         let $li = document.createElement('li')
